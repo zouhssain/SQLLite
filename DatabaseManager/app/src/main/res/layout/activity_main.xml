@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ab3">
+
+    <TextView
+        android:id="@+id/Nom"
+        android:layout_width="156dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="15dp"
+        android:padding="10dp"
+        android:layout_marginTop="139dp"
+        android:text="Nom"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/Phone"
+        android:layout_width="156dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/Nom"
+        android:paddingLeft="15dp"
+        android:text="Phone"
+        android:padding="10dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Text_Nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Nom"
+        android:layout_toEndOf="@+id/Nom"
+        android:ems="10"
+        android:hint="your name"
+        android:padding="10dp"
+        android:layout_margin="3dp"
+        android:inputType="textPersonName"
+        android:background="#ffffff"/>
+
+    <EditText
+        android:id="@+id/Text_Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Nom"
+        android:layout_margin="3dp"
+        android:layout_toEndOf="@+id/Nom"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="your phone number"
+        android:padding="10dp"
+        android:background="#ffffff"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="156dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_below="@+id/Phone"
+        android:textSize="20sp"
+        android:text="ID spr/Mdf" />
+
+    <EditText
+        android:id="@+id/delete_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Phone"
+        android:layout_toEndOf="@+id/Nom"
+        android:layout_margin="3dp"
+        android:padding="10dp"
+        android:ems="10"
+        android:hint="id pour supprimer/modifier"
+        android:inputType="number"
+        android:background="#ffffff"/>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="buttonAdd" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/buttonAdd"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/buttonShowAll"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonDelete"
+        android:layout_toRightOf="@+id/buttonUpdate"
+        android:text="Afficher" />
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonAdd"
+        android:text="Update" />
+
+</RelativeLayout>
